@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="219" id="6WQ-zH-VNf" customClass="CustomCell" customModule="M14" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="718" height="219"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6WQ-zH-VNf" id="J4C-1g-KN3">
+                <rect key="frame" x="0.0" y="0.0" width="718" height="219"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gad-QI-42U">
+                        <rect key="frame" x="0.0" y="0.0" width="718" height="219"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" verticalHuggingPriority="251" image="Austria" translatesAutoresizingMaskIntoConstraints="NO" id="Lyl-gF-dQQ" userLabel="Image">
+                                <rect key="frame" x="0.0" y="34.5" width="200" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Edf-kX-dC0"/>
+                                    <constraint firstAttribute="height" constant="150" id="HRe-1a-d6i"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L7W-fY-eSJ">
+                                <rect key="frame" x="200" y="95" width="518" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="gad-QI-42U" secondAttribute="trailing" id="V11-eh-XHI"/>
+                    <constraint firstItem="gad-QI-42U" firstAttribute="leading" secondItem="J4C-1g-KN3" secondAttribute="leading" id="iM5-0y-qAG"/>
+                    <constraint firstAttribute="bottom" secondItem="gad-QI-42U" secondAttribute="bottom" id="nDI-BM-UeX"/>
+                    <constraint firstItem="gad-QI-42U" firstAttribute="top" secondItem="J4C-1g-KN3" secondAttribute="top" id="vBa-du-F6a"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="countryImage" destination="Lyl-gF-dQQ" id="Ua9-Od-k06"/>
+                <outlet property="countryName" destination="L7W-fY-eSJ" id="ocg-VQ-ptF"/>
+            </connections>
+            <point key="canvasLocation" x="-550.72463768115949" y="149.66517857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Austria" width="400" height="300"/>
+    </resources>
+</document>

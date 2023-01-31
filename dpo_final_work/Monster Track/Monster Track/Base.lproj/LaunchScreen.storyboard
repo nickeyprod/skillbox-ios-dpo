@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" userInteractionEnabled="NO" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i4Q-BY-8Tv">
+                                <rect key="frame" x="0.0" y="-5" width="393" height="857"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MonsteR TracK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmM-bT-oua">
+                                <rect key="frame" x="52.333333333333343" y="209" width="288.66666666666663" height="67.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="42"/>
+                                <color key="textColor" red="0.87843276515151514" green="0.85775019450858325" blue="0.33002213202554392" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Monster_1" translatesAutoresizingMaskIntoConstraints="NO" id="nFK-bm-3Vv">
+                                <rect key="frame" x="0.0" y="356.33333333333331" width="393" height="169.99999999999994"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="JjC-Wv-QxZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Охота на монстров" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NdL-Uk-CiA">
+                                <rect key="frame" x="74.666666666666686" y="606.33333333333337" width="244" height="45"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="28"/>
+                                <color key="textColor" red="0.55577774998521068" green="0.83136047979797978" blue="0.20096767774074531" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NdL-Uk-CiA" firstAttribute="top" secondItem="nFK-bm-3Vv" secondAttribute="bottom" constant="80" id="2nn-8Q-d8P"/>
+                            <constraint firstItem="nFK-bm-3Vv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6GT-yL-cKw"/>
+                            <constraint firstItem="dmM-bT-oua" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="9CW-yS-LCD"/>
+                            <constraint firstItem="i4Q-BY-8Tv" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="-5" id="H8M-1s-CnW"/>
+                            <constraint firstAttribute="trailing" secondItem="i4Q-BY-8Tv" secondAttribute="trailing" id="Hrq-HZ-Q20"/>
+                            <constraint firstItem="NdL-Uk-CiA" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Joh-05-7As"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nFK-bm-3Vv" secondAttribute="trailing" id="OHn-eE-6CL"/>
+                            <constraint firstAttribute="bottom" secondItem="i4Q-BY-8Tv" secondAttribute="bottom" id="WXE-Na-LVC"/>
+                            <constraint firstItem="nFK-bm-3Vv" firstAttribute="top" secondItem="dmM-bT-oua" secondAttribute="bottom" constant="80" id="bhw-n7-qwC"/>
+                            <constraint firstItem="i4Q-BY-8Tv" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="npQ-oI-Vna"/>
+                            <constraint firstItem="dmM-bT-oua" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="od5-Qc-iOH"/>
+                            <constraint firstItem="nFK-bm-3Vv" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="rVD-YL-VET"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Monster_1" width="83" height="95"/>
+        <image name="background" width="375" height="807"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

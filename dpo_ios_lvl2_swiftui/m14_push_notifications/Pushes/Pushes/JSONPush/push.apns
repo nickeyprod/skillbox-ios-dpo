@@ -1,0 +1,11 @@
+{
+    "Simulator Target Bundle": "com.nickeyprod.Pushes",
+    "aps": {
+        "alert": {
+            "title": "Сообщение для вас",
+            "subtitle": "Test Push Notifications",
+            "body": "Оно появилось, Хе-хе"
+        }
+    },
+    "myField": "My Field test"
+}
